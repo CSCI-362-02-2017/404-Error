@@ -9,7 +9,7 @@
 
 002
 Testing that the compareNatural method will return a negative number if s lexicographically precedes t
-compareNatural(String s, String t, boolean caseSensitive, Collator collator) in the NaturalString.java class
+compareNatural(String s, String t) in the NaturalString.java class
 NaturalStringDriver.java
-"test", "white", true, NULL
+"test", "white"
 -3
