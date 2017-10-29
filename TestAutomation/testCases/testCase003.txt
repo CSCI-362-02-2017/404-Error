@@ -2,14 +2,16 @@
 # 1. Test Case ID
 # 2. Requirement being tested
 #	3. Component being tested
-# 4. Driver being used
-# 5. Test Inputs(s)
-#	6. Expected Result
+# 4. Class
+# 5. Driver being used
+# 6. Test Inputs(s)
+#	7. Expected Result
 #
 
 003
 Testing that the compareNatural method will return a positive number if s lexicographically follows tNaturalString.java
-compareNatural(String s, String t) in the NaturalString.java class
+compareNatural(String s, String t)
+NaturalString.java class
 NaturalStringDriver.java
 "test", "string"
 1
