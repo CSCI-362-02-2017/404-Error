@@ -9,9 +9,9 @@
 #
 
 003
-Testing that the compareNatural method will return a positive number if s lexicographically follows tNaturalString.java
+Testing that the compareNatural method will return a positive number if s lexicographically follows t
 compareNatural(String s, String t)
-NaturalString.java class
+NaturalString.java
 NaturalStringDriver.java
 "test", "string"
 1
