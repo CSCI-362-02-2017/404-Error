@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.openmrs.api.VisitServiceTest" time="0.776" tests="60" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.121-b13"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/MatthewKay/Documents/SeniorYear1stSemester/362/Project/openmrs-core"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/MatthewKay/Documents/SeniorYear1stSemester/362/Project/openmrs-core"/>
+    <property name="java.runtime.version" value="1.8.0_121-b13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/t3/yjzk6jg55p74mpd9yqjw1hsm0000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.3.9/libexec/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/MatthewKay/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.12.6"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/MatthewKay"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="MatthewKay"/>
+    <property name="java.class.path" value="/usr/local/Cellar/maven/3.3.9/libexec/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_121"/>
+    <property name="java.ext.dirs" value="/Users/MatthewKay/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/local/Cellar/maven/3.3.9/libexec"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="saveVisitType_shouldSaveNewVisitType" classname="org.openmrs.api.VisitServiceTest" time="0.156"/>
+  <testcase name="getActiveVisitsByPatient_shouldReturnAllActiveVisitsForTheSpecifiedPatient" classname="org.openmrs.api.VisitServiceTest" time="0.015"/>
+  <testcase name="unretireVisitAttributeType_shouldUnretireARetiredVisitAttributeType" classname="org.openmrs.api.VisitServiceTest" time="0.012"/>
+  <testcase name="saveVisit_shouldAssociateEncounterWithVisitOnSaveEncounter" classname="org.openmrs.api.VisitServiceTest" time="0.008"/>
+  <testcase name="getAllVisitTypes_shouldGetAllVisitTypes" classname="org.openmrs.api.VisitServiceTest" time="0.003"/>
+  <testcase name="getVisits_shouldGetVisitsEndedBetweenTheGivenEndDates" classname="org.openmrs.api.VisitServiceTest" time="0.014"/>
+  <testcase name="saveVisitAttributeType_shouldEditAnExistingVisitAttributeType" classname="org.openmrs.api.VisitServiceTest" time="0.008"/>
+  <testcase name="getVisits_shouldGetVisitsThatAreStillOpenEvenIfMinStartDatetimeIsSpecified" classname="org.openmrs.api.VisitServiceTest" time="0.009"/>
+  <testcase name="getVisitAttributeByUuid_shouldReturnNullIfNoVisitAttributeHasTheGivenUuid" classname="org.openmrs.api.VisitServiceTest" time="0.011"/>
+  <testcase name="saveVisitAttributeType_shouldCreateANewVisitAttributeType" classname="org.openmrs.api.VisitServiceTest" time="0.014"/>
+  <testcase name="unvoidVisit_shouldUnvoidEncountersVoidedWithVisit" classname="org.openmrs.api.VisitServiceTest" time="0.04"/>
+  <testcase name="endVisit_shouldSetStopDateTimeAsCurrentDateIfStopDateIsNull" classname="org.openmrs.api.VisitServiceTest" time="0.009"/>
+  <testcase name="saveVisit_shouldFailIfValidationErrorsAreFound" classname="org.openmrs.api.VisitServiceTest" time="0.005"/>
+  <testcase name="retireVisitType_shouldRetireGivenVisitType" classname="org.openmrs.api.VisitServiceTest" time="0.006"/>
+  <testcase name="saveVisit_shouldSaveNewVisitWithEncountersSuccessfully" classname="org.openmrs.api.VisitServiceTest" time="0.011"/>
+  <testcase name="getVisits_shouldGetVisitsStartedBetweenTheGivenStartDates" classname="org.openmrs.api.VisitServiceTest" time="0.024"/>
+  <testcase name="getVisits_shouldGetVisitsByVisitType" classname="org.openmrs.api.VisitServiceTest" time="0.003"/>
+  <testcase name="purgeVisit_shouldEraseTheVisitFromTheDatabase" classname="org.openmrs.api.VisitServiceTest" time="0.007"/>
+  <testcase name="getVisits_shouldGetVisitsByIndications" classname="org.openmrs.api.VisitServiceTest" time="0.005"/>
+  <testcase name="getVisitsByPatient_shouldReturnAllUnvoidedVisitsForTheSpecifiedPatient" classname="org.openmrs.api.VisitServiceTest" time="0.005"/>
+  <testcase name="getAllVisitTypes_shouldGetAllVisitTypesBasedOnIncludeRetiredFlag" classname="org.openmrs.api.VisitServiceTest" time="0.006"/>
+  <testcase name="saveVisit_shouldUpdateAnExistingVisitInTheDatabase" classname="org.openmrs.api.VisitServiceTest" time="0.01"/>
+  <testcase name="getVisitType_shouldGetCorrectVisitType" classname="org.openmrs.api.VisitServiceTest" time="0.005"/>
+  <testcase name="endVisit_shouldFailIfValidationErrorsAreFound" classname="org.openmrs.api.VisitServiceTest" time="0.009"/>
+  <testcase name="retireVisitAttributeType_shouldRetireAVisitAttributeType" classname="org.openmrs.api.VisitServiceTest" time="0.008"/>
+  <testcase name="unretireVisitType_shouldUnretireGivenVisitType" classname="org.openmrs.api.VisitServiceTest" time="0.007"/>
+  <testcase name="getVisitTypes_shouldGetCorrentVisitTypes" classname="org.openmrs.api.VisitServiceTest" time="0.007"/>
+  <testcase name="getActiveVisitsByPatient_shouldReturnAllUnvoidedVisitsForTheSpecifiedPatient" classname="org.openmrs.api.VisitServiceTest" time="0.02"/>
+  <testcase name="getActiveVisitsByPatient_shouldReturnAllUnvoidedActiveVisitsForTheSpecifiedPatient" classname="org.openmrs.api.VisitServiceTest" time="0.021"/>
+  <testcase name="getVisits_shouldReturnAllVisitsIfIncludeVoidedIsSetToTrue" classname="org.openmrs.api.VisitServiceTest" time="0.004"/>
+  <testcase name="getVisits_shouldGetAllVisitsWithGivenAttributeValues" classname="org.openmrs.api.VisitServiceTest" time="0.011"/>
+  <testcase name="stopVisits_shouldCloseAllUnvoidedActiveVisitMatchingTheSpecifiedVisitTypes" classname="org.openmrs.api.VisitServiceTest" time="0.02"/>
+  <testcase name="getVisitAttributeByUuid_shouldGetTheVisitAttributeWithTheGivenUuid" classname="org.openmrs.api.VisitServiceTest" time="0.009"/>
+  <testcase name="getAllVisitAttributeTypes_shouldReturnAllVisitAttributeTypesIncludingRetiredOnes" classname="org.openmrs.api.VisitServiceTest" time="0.009"/>
+  <testcase name="saveVisit_shouldSaveAVisitThoughChangedByAndDateCreatedAreNotSetForVisitAttributeExplictly" classname="org.openmrs.api.VisitServiceTest" time="0.018"/>
+  <testcase name="saveVisit_shouldBeAbleToAddAnAttributeToAVisit" classname="org.openmrs.api.VisitServiceTest" time="0.01"/>
+  <testcase name="getVisits_shouldGetVisitsByLocations" classname="org.openmrs.api.VisitServiceTest" time="0.005"/>
+  <testcase name="endVisit_shouldNotFailIfNoValidationErrorsAreFound" classname="org.openmrs.api.VisitServiceTest" time="0.009"/>
+  <testcase name="saveVisit_shouldPassIfNoValidationErrorsAreFound" classname="org.openmrs.api.VisitServiceTest" time="0.009"/>
+  <testcase name="voidVisit_shouldVoidEncountersWithVisit" classname="org.openmrs.api.VisitServiceTest" time="0.031"/>
+  <testcase name="saveVisit_shouldAddANewVisitToTheDatabase" classname="org.openmrs.api.VisitServiceTest" time="0.006"/>
+  <testcase name="shouldVoidASimpleAttribute" classname="org.openmrs.api.VisitServiceTest" time="0.011"/>
+  <testcase name="getVisitAttributeType_shouldReturnNullIfNoVisitAttributeTypeExistsWithTheGivenId" classname="org.openmrs.api.VisitServiceTest" time="0.009"/>
+  <testcase name="getVisitTypeByUuid_shouldGetCorrentVisitType" classname="org.openmrs.api.VisitServiceTest" time="0.004"/>
+  <testcase name="purgeVisit_shouldFailIfTheVisitHasEncountersAssociatedToIt" classname="org.openmrs.api.VisitServiceTest" time="0.009"/>
+  <testcase name="getVisitAttributeTypeByUuid_shouldReturnNullIfNoVisitAttributeTypeExistsWithTheGivenUuid" classname="org.openmrs.api.VisitServiceTest" time="0.01"/>
+  <testcase name="saveVisit_shouldNotPersistNewEncounter" classname="org.openmrs.api.VisitServiceTest" time="0.01"/>
+  <testcase name="unvoidVisit_shouldUnvoidTheVisitAndUnsetAllTheVoidRelatedFields" classname="org.openmrs.api.VisitServiceTest" time="0.011"/>
+  <testcase name="purgeVisitAttributeType_shouldCompletelyRemoveAVisitAttributeType" classname="org.openmrs.api.VisitServiceTest" time="0.011"/>
+  <testcase name="getAllVisits_shouldReturnAllUnvoidedVisits" classname="org.openmrs.api.VisitServiceTest" time="0.005"/>
+  <testcase name="saveVisitType_shouldThrowErrorWhenNameIsNull" classname="org.openmrs.api.VisitServiceTest" time="0.003"/>
+  <testcase name="voidVisit_shouldVoidTheVisitAndSetTheVoidReason" classname="org.openmrs.api.VisitServiceTest" time="0.026"/>
+  <testcase name="getVisitAttributeType_shouldReturnTheVisitAttributeTypeWithTheGivenId" classname="org.openmrs.api.VisitServiceTest" time="0.01"/>
+  <testcase name="saveVisit_shouldVoidAnAttributeIfMaxOccursIs1AndSameAttributeTypeAlreadyExists" classname="org.openmrs.api.VisitServiceTest" time="0.013"/>
+  <testcase name="saveVisitType_shouldSaveEditedVisitType" classname="org.openmrs.api.VisitServiceTest" time="0.006"/>
+  <testcase name="getVisits_shouldNotFindAnyVisitsIfNoneHaveGivenAttributeValues" classname="org.openmrs.api.VisitServiceTest" time="0.012"/>
+  <testcase name="getVisitAttributeTypeByUuid_shouldReturnTheVisitAttributeTypeWithTheGivenUuid" classname="org.openmrs.api.VisitServiceTest" time="0.01"/>
+  <testcase name="getVisitByUuid_shouldReturnAVisitMatchingTheSpecifiedUuid" classname="org.openmrs.api.VisitServiceTest" time="0.008"/>
+  <testcase name="purgeVisitType_shouldDeleteGivenVisitType" classname="org.openmrs.api.VisitServiceTest" time="0.005"/>
+  <testcase name="saveVisitType_shouldThrowErrorWhenNameIsEmptyString" classname="org.openmrs.api.VisitServiceTest" time="0.004"/>
+</testsuite>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.openmrs.OrderTest" time="0.723" tests="64" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.121-b13"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/MatthewKay/Documents/SeniorYear1stSemester/362/Project/openmrs-core"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/MatthewKay/Documents/SeniorYear1stSemester/362/Project/openmrs-core"/>
+    <property name="java.runtime.version" value="1.8.0_121-b13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/t3/yjzk6jg55p74mpd9yqjw1hsm0000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.3.9/libexec/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/MatthewKay/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.12.6"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/MatthewKay"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="MatthewKay"/>
+    <property name="java.class.path" value="/usr/local/Cellar/maven/3.3.9/libexec/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_121"/>
+    <property name="java.ext.dirs" value="/Users/MatthewKay/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/local/Cellar/maven/3.3.9/libexec"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="isDiscontinued_shouldNotDiscontinueActivatedOrderAfterAutoExpireDate" classname="org.openmrs.OrderTest" time="0.182"/>
+  <testcase name="isActive_shouldReturnTrueIfAnOrderWasDiscontinuedOnTheCheckDate" classname="org.openmrs.OrderTest" time="0.003"/>
+  <testcase name="isExpired_shouldReturnFalseIfDateStoppedIsNullAndAutoExpireDateIsEqualToCheckDate" classname="org.openmrs.OrderTest" time="0.004"/>
+  <testcase name="isStarted_shouldReturnFalseIfTheOrderIsNotYetActivatedAsOfTheCheckDate" classname="org.openmrs.OrderTest" time="0.003"/>
+  <testcase name="isActive_shouldReturnFalseForADiscontinuationOrder" classname="org.openmrs.OrderTest" time="0.003"/>
+  <testcase name="isDiscontinued_shouldNotDiscontinueGivenActivatedOrderWithoutEndDate" classname="org.openmrs.OrderTest" time="0.003"/>
+  <testcase name="isActive_shouldBeCurrentAfterDateActivated" classname="org.openmrs.OrderTest" time="0.003"/>
+  <testcase name="isExpired_shouldFailIfDateStoppedIsAfterAutoExpireDate" classname="org.openmrs.OrderTest" time="0.005"/>
+  <testcase name="isType_shouldTrueIfItIsTheSameOrIsASubtype" classname="org.openmrs.OrderTest" time="0.003"/>
+  <testcase name="isActive_shouldReturnTrueIfAnOrderExpiredOnTheCheckDate" classname="org.openmrs.OrderTest" time="0.004"/>
+  <testcase name="getEffectiveStartDate_shouldReturnDateActivatedIfUrgencyIsNotScheduled" classname="org.openmrs.OrderTest" time="0.004"/>
+  <testcase name="isType_shouldFalseIfItNeitherTheSameNorASubtype" classname="org.openmrs.OrderTest" time="0.005"/>
+  <testcase name="isExpired_shouldReturnFalseIfDateActivatedIsAfterCheckDate" classname="org.openmrs.OrderTest" time="0.005"/>
+  <testcase name="hasSameOrderableAs_shouldReturnFalseIfOtherOrderIsNull" classname="org.openmrs.OrderTest" time="0.005"/>
+  <testcase name="isStarted_shouldReturnTrueIfTheOrderIsStartedAndNotScheduled" classname="org.openmrs.OrderTest" time="0.038"/>
+  <testcase name="isDiscontinued_shouldReturnFalseIfAutoExpireDateIsNullAndDateStoppedIsEqualToCheckDate" classname="org.openmrs.OrderTest" time="0.012"/>
+  <testcase name="isStarted_shouldReturnFalseIfDateActivatedIsNull" classname="org.openmrs.OrderTest" time="0.006"/>
+  <testcase name="isActive_shouldReturnFalseForAnExpiredOrder" classname="org.openmrs.OrderTest" time="0.008"/>
+  <testcase name="isFuture_shouldReturnFalseForAVoidedOrder" classname="org.openmrs.OrderTest" time="0.016"/>
+  <testcase name="isExpired_shouldReturnFalseIfCheckDateIsAfterDateStoppedButBeforeAutoExpireDate" classname="org.openmrs.OrderTest" time="0.005"/>
+  <testcase name="isStarted_shouldReturnFalseIfTheOrderWasScheduledToStartAfterTheCheckDate" classname="org.openmrs.OrderTest" time="0.007"/>
+  <testcase name="isDiscontinued_shouldReturnTrueIfCheckDateIsAfterDateStoppedButBeforeAutoExpireDate" classname="org.openmrs.OrderTest" time="0.004"/>
+  <testcase name="isStarted_shouldReturnFalseForAVoidedOrder" classname="org.openmrs.OrderTest" time="0.004"/>
+  <testcase name="isDiscontinued_shouldNotDiscontinueGivenOrderWithoutDates" classname="org.openmrs.OrderTest" time="0.062"/>
+  <testcase name="getEffectiveStopDate_shouldReturnDateStoppedIfDateStoppedIsNotNull" classname="org.openmrs.OrderTest" time="0.007"/>
+  <testcase name="isExpired_shouldReturnFalseIfCheckDateIsAfterBothDateStoppedAutoExpireDate" classname="org.openmrs.OrderTest" time="0.007"/>
+  <testcase name="hasSameOrderableAs_shouldReturnTrueIfTheOrdersHaveTheSameConcept" classname="org.openmrs.OrderTest" time="0.003"/>
+  <testcase name="isActive_shouldBeCurrentBetweenDateActivatedAndDateStopped" classname="org.openmrs.OrderTest" time="0.004"/>
+  <testcase name="isDiscontinued_shouldReturnFalseIfDateActivatedIsAfterCheckDate" classname="org.openmrs.OrderTest" time="0.018"/>
+  <testcase name="cloneForRevision_shouldSetTheRelevantFieldsForADCOrder" classname="org.openmrs.OrderTest" time="0.004"/>
+  <testcase name="isStarted_shouldReturnTrueIfTheOrderWasScheduledToStartBeforeTheCheckDate" classname="org.openmrs.OrderTest" time="0.004"/>
+  <testcase name="isActivated_shouldReturnFalseForAnOrderActivatedAfterTheCheckDate" classname="org.openmrs.OrderTest" time="0.037"/>
+  <testcase name="isDiscontinued_shouldReturnTrueIfAutoExpireDateIsNullAndDateStoppedIsBeforeCheckDate" classname="org.openmrs.OrderTest" time="0.005"/>
+  <testcase name="isDiscontinued_shouldReturnFalseIfDateStoppedAndAutoExpireDateAreBothNull" classname="org.openmrs.OrderTest" time="0.003"/>
+  <testcase name="isExpired_shouldReturnTrueIfDateStoppedIsNullAndAutoExpireDateIsBeforeCheckDate" classname="org.openmrs.OrderTest" time="0.003"/>
+  <testcase name="isExpired_shouldReturnFalseIfDateStoppedAndAutoExpireDateAreBothNull" classname="org.openmrs.OrderTest" time="0.003"/>
+  <testcase name="isDiscontinued_shouldNotDiscontinueBeforeActivationDate" classname="org.openmrs.OrderTest" time="0.004"/>
+  <testcase name="isDiscontinued_shouldNotDiscontinueActivatedOrderBeforeDateStopped" classname="org.openmrs.OrderTest" time="0.003"/>
+  <testcase name="isActivated_shouldReturnTrueIfAnOrderWasActivatedBeforeTheCheckDate" classname="org.openmrs.OrderTest" time="0.004"/>
+  <testcase name="cloneForRevision_shouldSetAllTheRelevantFields" classname="org.openmrs.OrderTest" time="0.004"/>
+  <testcase name="isActive_shouldReturnFalseForAnOrderActivatedAfterTheCheckDate" classname="org.openmrs.OrderTest" time="0.003"/>
+  <testcase name="isStarted_shouldReturnTrueIfTheOrderWasScheduledToStartOnTheCheckDate" classname="org.openmrs.OrderTest" time="0.003"/>
+  <testcase name="isActive_shouldReturnFalseForAVoidedOrder" classname="org.openmrs.OrderTest" time="0.005"/>
+  <testcase name="isDiscontinued_shouldReturnTrueIfCheckDateIsAfterBothDateStoppedAutoExpireDate" classname="org.openmrs.OrderTest" time="0.004"/>
+  <testcase name="isActive_shouldReturnTrueIfAnOrderWasActivatedOnTheCheckDateButScheduledForTheFuture" classname="org.openmrs.OrderTest" time="0.004"/>
+  <testcase name="isActivated_shouldReturnTrueIfAnOrderWasActivatedOnTheCheckDate" classname="org.openmrs.OrderTest" time="0.004"/>
+  <testcase name="isActive_shouldReturnFalseForADiscontinuedOrder" classname="org.openmrs.OrderTest" time="0.004"/>
+  <testcase name="isExpired_shouldReturnFalseIfDateStoppedIsNullAndAutoExpireDateIsAfterCheckDate" classname="org.openmrs.OrderTest" time="0.003"/>
+  <testcase name="isActive_shouldReturnTrueIfAnOrderWasActivatedOnTheCheckDate" classname="org.openmrs.OrderTest" time="0.006"/>
+  <testcase name="isDiscontinued_shouldFailIfDateStoppedIsAfterAutoExpireDate" classname="org.openmrs.OrderTest" time="0.003"/>
+  <testcase name="isActive_shouldBeCurrentBetweenDateActivatedAndAutoExpireDate" classname="org.openmrs.OrderTest" time="0.085"/>
+  <testcase name="isDiscontinued_shouldReturnFalseIfAutoExpireDateIsNullAndDateStoppedIsAfterCheckDate" classname="org.openmrs.OrderTest" time="0.005"/>
+  <testcase name="isDiscontinued_shouldNotDiscontinueActivatedOrderBeforeAutoExpireDate" classname="org.openmrs.OrderTest" time="0.003"/>
+  <testcase name="cloneForDiscontinuing_shouldSetAllTheRelevantFields" classname="org.openmrs.OrderTest" time="0.03"/>
+  <testcase name="isDiscontinued_shouldDiscontinueActivatedOrderAfterDateStopped" classname="org.openmrs.OrderTest" time="0.004"/>
+  <testcase name="isActivated_shouldReturnFalseIfDateActivatedIsNull" classname="org.openmrs.OrderTest" time="0.009"/>
+  <testcase name="getEffectiveStopDate_shouldReturnAutoExpireDateIfDateStoppedIsNull" classname="org.openmrs.OrderTest" time="0.004"/>
+  <testcase name="isDiscontinued_shouldReturnTrueIfTheOrderIsScheduledForTheFutureAndActivatedOnCheckDateButTheCheckDateIsAfterDateStopped" classname="org.openmrs.OrderTest" time="0.004"/>
+  <testcase name="isExpired_shouldReturnFalseForAVoidedOrder" classname="org.openmrs.OrderTest" time="0.005"/>
+  <testcase name="isDiscontinued_shouldReturnFalseForAVoidedOrder" classname="org.openmrs.OrderTest" time="0.004"/>
+  <testcase name="isFuture_shouldReturnFalseIfDateActivatedIsNull" classname="org.openmrs.OrderTest" time="0.003"/>
+  <testcase name="getEffectiveStartDate_shouldReturnScheduledDateIfUrgencyIsScheduled" classname="org.openmrs.OrderTest" time="0.004"/>
+  <testcase name="hasSameOrderableAs_shouldReturnFalseIfTheConceptOfTheOrdersDoNotMatch" classname="org.openmrs.OrderTest" time="0.008"/>
+  <testcase name="copy_shouldCopyAllFields" classname="org.openmrs.OrderTest" time="0.009"/>
+</testsuite>

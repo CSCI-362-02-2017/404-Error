@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.openmrs.api.CohortServiceTest" time="1.475" tests="39" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.121-b13"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/MatthewKay/Documents/SeniorYear1stSemester/362/Project/openmrs-core"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/MatthewKay/Documents/SeniorYear1stSemester/362/Project/openmrs-core"/>
+    <property name="java.runtime.version" value="1.8.0_121-b13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/t3/yjzk6jg55p74mpd9yqjw1hsm0000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.3.9/libexec/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/MatthewKay/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.12.6"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/MatthewKay"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="MatthewKay"/>
+    <property name="java.class.path" value="/usr/local/Cellar/maven/3.3.9/libexec/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_121"/>
+    <property name="java.ext.dirs" value="/Users/MatthewKay/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/local/Cellar/maven/3.3.9/libexec"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="purgeCohortMembership_shouldRemoveMembershipFromCohort" classname="org.openmrs.api.CohortServiceTest" time="0.359"/>
+  <testcase name="addPatientToCohort_shouldAddAPatientAndSaveTheCohort" classname="org.openmrs.api.CohortServiceTest" time="0.034"/>
+  <testcase name="saveCohort_shouldUpdateAnExistingCohort" classname="org.openmrs.api.CohortServiceTest" time="0.027"/>
+  <testcase name="purgeCohort_shouldDeleteCohortFromDatabase" classname="org.openmrs.api.CohortServiceTest" time="0.026"/>
+  <testcase name="getMemberships_shouldReturnVoidedMemberships" classname="org.openmrs.api.CohortServiceTest" time="0.024"/>
+  <testcase name="getCohort_shouldGetCohortById" classname="org.openmrs.api.CohortServiceTest" time="0.016"/>
+  <testcase name="getAllCohorts_shouldReturnAllCohortsAndVoided" classname="org.openmrs.api.CohortServiceTest" time="0.018"/>
+  <testcase name="getCohort_shouldGetCohortGivenAName" classname="org.openmrs.api.CohortServiceTest" time="0.016"/>
+  <testcase name="getCohortByUuid_shouldFindObjectGivenValidUuid" classname="org.openmrs.api.CohortServiceTest" time="0.022"/>
+  <testcase name="getMemberships_shouldNotGetMatchingMembershipsAsOfADate" classname="org.openmrs.api.CohortServiceTest" time="0.032"/>
+  <testcase name="getCohortsContainingPatient_shouldNotReturnVoidedCohorts" classname="org.openmrs.api.CohortServiceTest" time="0.048"/>
+  <testcase name="addPatientToCohort_shouldNotFailIfCohortAlreadyContainsPatient" classname="org.openmrs.api.CohortServiceTest" time="0.029"/>
+  <testcase name="getMemberships_shouldGetMembershipsAsOfADate" classname="org.openmrs.api.CohortServiceTest" time="0.027"/>
+  <testcase name="getAllCohorts_shouldNotReturnAnyVoidedCohorts" classname="org.openmrs.api.CohortServiceTest" time="0.033"/>
+  <testcase name="getMemberships_shouldReturnUnvoidedMemberships" classname="org.openmrs.api.CohortServiceTest" time="0.024"/>
+  <testcase name="getCohortMemberships_shouldGetMembershipsContainingPatientInDateRange" classname="org.openmrs.api.CohortServiceTest" time="0.02"/>
+  <testcase name="saveCohort_shouldCreateNewCohorts" classname="org.openmrs.api.CohortServiceTest" time="0.035"/>
+  <testcase name="getCohortMembershipByUuid_shouldReturnNullIfNoObjectFoundWithGivenUuid" classname="org.openmrs.api.CohortServiceTest" time="0.007"/>
+  <testcase name="getAllCohorts_shouldGetAllNonvoidedCohortsInDatabase" classname="org.openmrs.api.CohortServiceTest" time="0.025"/>
+  <testcase name="voidCohort_shouldVoidCohort" classname="org.openmrs.api.CohortServiceTest" time="0.031"/>
+  <testcase name="getCohort_shouldGetTheNonvoidedCohortIfTwoExistWithSameName" classname="org.openmrs.api.CohortServiceTest" time="0.025"/>
+  <testcase name="voidCohortMembership_shouldVoidCohortMembership" classname="org.openmrs.api.CohortServiceTest" time="0.021"/>
+  <testcase name="getCohortsContainingPatient_shouldNotReturnEndedMemberships" classname="org.openmrs.api.CohortServiceTest" time="0.027"/>
+  <testcase name="getCohortMembershipByUuid_shouldFindObjectGivenValidUuid" classname="org.openmrs.api.CohortServiceTest" time="0.022"/>
+  <testcase name="removePatientFromCohort_shouldNotFailIfCohortDoesNotContainPatient" classname="org.openmrs.api.CohortServiceTest" time="0.025"/>
+  <testcase name="getCohorts_shouldMatchCohortsByPartialName" classname="org.openmrs.api.CohortServiceTest" time="0.026"/>
+  <testcase name="removePatientFromCohort_shouldSaveCohortAfterRemovingPatient" classname="org.openmrs.api.CohortServiceTest" time="0.067"/>
+  <testcase name="patientUnvoided_shouldUnvoidMemberships" classname="org.openmrs.api.CohortServiceTest" time="0.032"/>
+  <testcase name="endCohortMembership_shouldEndTheCohortMembership" classname="org.openmrs.api.CohortServiceTest" time="0.032"/>
+  <testcase name="voidCohort_shouldNotChangeAnAlreadyVoidedCohort" classname="org.openmrs.api.CohortServiceTest" time="0.03"/>
+  <testcase name="getCohortMemberships_shouldNotGetMembershipsContainingPatientOutsideDateRange" classname="org.openmrs.api.CohortServiceTest" time="0.066"/>
+  <testcase name="getCohortsContainingPatient_shouldReturnCohortsThatHaveGivenPatient" classname="org.openmrs.api.CohortServiceTest" time="0.058"/>
+  <testcase name="patientVoided_shouldVoidMemberships" classname="org.openmrs.api.CohortServiceTest" time="0.03"/>
+  <testcase name="voidCohort_shouldFailIfReasonIsEmpty" classname="org.openmrs.api.CohortServiceTest" time="0.025"/>
+  <testcase name="getCohortMemberships_shouldGetMembershipsContainingPatient" classname="org.openmrs.api.CohortServiceTest" time="0.02"/>
+  <testcase name="getCohortByUuid_shouldReturnNullIfNoObjectFoundWithGivenUuid" classname="org.openmrs.api.CohortServiceTest" time="0.005"/>
+  <testcase name="getCohort_shouldOnlyGetNonVoidedCohortsByName" classname="org.openmrs.api.CohortServiceTest" time="0.056"/>
+  <testcase name="getCohorts_shouldNeverReturnNull" classname="org.openmrs.api.CohortServiceTest" time="0.025"/>
+  <testcase name="voidCohort_shouldFailIfReasonIsNull" classname="org.openmrs.api.CohortServiceTest" time="0.03"/>
+</testsuite>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.openmrs.api.ObsServiceTest" time="1.249" tests="80" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.121-b13"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/MatthewKay/Documents/SeniorYear1stSemester/362/Project/openmrs-core"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/MatthewKay/Documents/SeniorYear1stSemester/362/Project/openmrs-core"/>
+    <property name="java.runtime.version" value="1.8.0_121-b13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/t3/yjzk6jg55p74mpd9yqjw1hsm0000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.3.9/libexec/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/MatthewKay/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.12.6"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/MatthewKay"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="MatthewKay"/>
+    <property name="java.class.path" value="/usr/local/Cellar/maven/3.3.9/libexec/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_121"/>
+    <property name="java.ext.dirs" value="/Users/MatthewKay/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/local/Cellar/maven/3.3.9/libexec"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="getObservationCount_shouldGetCountOfObsWithAnswerConceptInGivenAnswersParameter" classname="org.openmrs.api.ObsServiceTest" time="0.187"/>
+  <testcase name="saveObs_shouldNotChangeStatusOfPreliminaryWhenModifyingAnObs" classname="org.openmrs.api.ObsServiceTest" time="0.005"/>
+  <testcase name="registerHandler_shouldRegisterHandlerWithTheGivenKey" classname="org.openmrs.api.ObsServiceTest" time="0.003"/>
+  <testcase name="removeHandler_shouldNotFailWithInvalidKey" classname="org.openmrs.api.ObsServiceTest" time="0.003"/>
+  <testcase name="registerHandler_shouldLoadHandlerAndRegisterKey" classname="org.openmrs.api.ObsServiceTest" time="0.003"/>
+  <testcase name="saveObs_shouldCreateNewFileFromComplexDataForNewObs" classname="org.openmrs.api.ObsServiceTest" time="0.02"/>
+  <testcase name="saveObs_shouldDeleteThePreviousFileWhenAComplexObservationIsUpdatedWithANewComplexValue" classname="org.openmrs.api.ObsServiceTest" time="0.018"/>
+  <testcase name="saveObs_shouldCreateVeryBasicObsAndAddNewObsId" classname="org.openmrs.api.ObsServiceTest" time="0.004"/>
+  <testcase name="getObservationCount_shouldReturnCountOfObsWithLocationInGivenLocationsParameter" classname="org.openmrs.api.ObsServiceTest" time="0.003"/>
+  <testcase name="getObservations_shouldReturnObsWhosePersonIsAUserOnly" classname="org.openmrs.api.ObsServiceTest" time="0.015"/>
+  <testcase name="getObservationCount_shouldGetCountOfObsAssignedToGivenEncounters" classname="org.openmrs.api.ObsServiceTest" time="0.004"/>
+  <testcase name="getObservations_shouldNotIncludeVoidedObs" classname="org.openmrs.api.ObsServiceTest" time="0.018"/>
+  <testcase name="voidObs_shouldFailIfReasonParameterIsEmpty" classname="org.openmrs.api.ObsServiceTest" time="0.004"/>
+  <testcase name="setHandlers_shouldAddNewHandlersWithNewKeys" classname="org.openmrs.api.ObsServiceTest" time="0.003"/>
+  <testcase name="getObservations_shouldGetObsMatchingEncounterIdInSearchString" classname="org.openmrs.api.ObsServiceTest" time="0.006"/>
+  <testcase name="getObservationCount_shouldReturnCountOfObsWhoseGroupIdIsGivenObsGroupId" classname="org.openmrs.api.ObsServiceTest" time="0.012"/>
+  <testcase name="getObservationCount_shouldReturnCountOfObsWhosePersonIsAUserOnly" classname="org.openmrs.api.ObsServiceTest" time="0.013"/>
+  <testcase name="getObservationCount_shouldReturnCountOfObsWithMatchingAccessionNumber" classname="org.openmrs.api.ObsServiceTest" time="0.012"/>
+  <testcase name="saveObs_shouldCascadeUpdateToNewChildObsGroups" classname="org.openmrs.api.ObsServiceTest" time="0.019"/>
+  <testcase name="shouldSaveUpdateDeleteVoidObsGroupCascades" classname="org.openmrs.api.ObsServiceTest" time="0.067"/>
+  <testcase name="saveObs_shouldNotVoidAnObsWithNoChanges" classname="org.openmrs.api.ObsServiceTest" time="0.019"/>
+  <testcase name="getObservationCount_shouldReturnCountOfAllObsWhosePersonIsAPersonOnly" classname="org.openmrs.api.ObsServiceTest" time="0.021"/>
+  <testcase name="shouldGetObservationsOnDay" classname="org.openmrs.api.ObsServiceTest" time="0.019"/>
+  <testcase name="saveObs_shouldVoidOnlyOldObsWhenAllObsEditedAndNewObsAdded" classname="org.openmrs.api.ObsServiceTest" time="0.033"/>
+  <testcase name="saveObs_shouldLinkOriginalAndUpdatedObs" classname="org.openmrs.api.ObsServiceTest" time="0.008"/>
+  <testcase name="getObservations_shouldReturnObsWhosePersonIsAPatientOnly" classname="org.openmrs.api.ObsServiceTest" time="0.024"/>
+  <testcase name="saveObs_shouldOverwriteObsPersonValueWithEncounterPatient" classname="org.openmrs.api.ObsServiceTest" time="0.015"/>
+  <testcase name="getObservations_shouldGetAllObsWithQuestionConceptInGivenQuestionsParameter" classname="org.openmrs.api.ObsServiceTest" time="0.005"/>
+  <testcase name="getObservationCount_shouldIncludeVoidedObservationsUsingTheSpecifiedConceptNamesAsAnswers" classname="org.openmrs.api.ObsServiceTest" time="0.007"/>
+  <testcase name="saveObs_shouldReturnADifferentObjectWhenUpdatingAnObs" classname="org.openmrs.api.ObsServiceTest" time="0.008"/>
+  <testcase name="getObservationCount_shouldIncludeVoidedObsInTheCountIfIncludeVoidedObsIsTrue" classname="org.openmrs.api.ObsServiceTest" time="0.02"/>
+  <testcase name="getObservationsByPerson_shouldGetAllObservationsAssignedToGivenPerson" classname="org.openmrs.api.ObsServiceTest" time="0.006"/>
+  <testcase name="getObservations_shouldOnlyReturnedObsWithMatchingAccessionNumber" classname="org.openmrs.api.ObsServiceTest" time="0.022"/>
+  <testcase name="getHandler_shouldHaveDefaultImageAndTextHandlersRegisteredBySpring" classname="org.openmrs.api.ObsServiceTest" time="0.003"/>
+  <testcase name="setHandlers_shouldOverrideHandlersWithSameKey" classname="org.openmrs.api.ObsServiceTest" time="0.01"/>
+  <testcase name="getObservationCount_shouldReturnCountOfObsWhosePersonIsAPatientOnly" classname="org.openmrs.api.ObsServiceTest" time="0.025"/>
+  <testcase name="saveObs_shouldVoidTheGivenObsInTheDatabase" classname="org.openmrs.api.ObsServiceTest" time="0.009"/>
+  <testcase name="getObservations_shouldGetObsMatchingPatientIdentifierInSearchString" classname="org.openmrs.api.ObsServiceTest" time="0.081"/>
+  <testcase name="purgeObs_shouldNotDeleteReferencedOrdersWhenPurgingObs" classname="org.openmrs.api.ObsServiceTest" time="0.023"/>
+  <testcase name="getObservationCount_shouldGetCountOfObsWithQuestionConceptInGivenQuestionsParameter" classname="org.openmrs.api.ObsServiceTest" time="0.004"/>
+  <testcase name="getObservations_shouldLimitNumberOfObsReturnedToMostReturnNParameter" classname="org.openmrs.api.ObsServiceTest" time="0.021"/>
+  <testcase name="getObservations_shouldGetAllObsAssignedToGivenEncounters" classname="org.openmrs.api.ObsServiceTest" time="0.005"/>
+  <testcase name="getObs_shouldGetObsMatchingGivenObsId" classname="org.openmrs.api.ObsServiceTest" time="0.004"/>
+  <testcase name="shouldReturnAPIExceptionWhenObsIsNull" classname="org.openmrs.api.ObsServiceTest" time="0.006"/>
+  <testcase name="purgeObs_shouldThrowAPIExceptionIfGivenTrueCascade" classname="org.openmrs.api.ObsServiceTest" time="0.004"/>
+  <testcase name="saveObs_shouldSetVoidReasonMessageToChangeMessage" classname="org.openmrs.api.ObsServiceTest" time="0.01"/>
+  <testcase name="getComplexObs_shouldReturnNormalObsForNonComplexObs" classname="org.openmrs.api.ObsServiceTest" time="0.015"/>
+  <testcase name="getObservations_shouldCompareDatesUsingLteAndGte" classname="org.openmrs.api.ObsServiceTest" time="0.029"/>
+  <testcase name="getObservations_shouldReturnAllObsWhosePersonIsAPersonOnly" classname="org.openmrs.api.ObsServiceTest" time="0.015"/>
+  <testcase name="getObservations_shouldIncludeVoidedObsIfIncludeVoidedObsIsTrue" classname="org.openmrs.api.ObsServiceTest" time="0.04"/>
+  <testcase name="getObservationsByPersonAndConcept_shouldNotFailWithNullPersonParameter" classname="org.openmrs.api.ObsServiceTest" time="0.004"/>
+  <testcase name="unvoidObs_shouldUnsetVoidedBitOnGivenObs" classname="org.openmrs.api.ObsServiceTest" time="0.007"/>
+  <testcase name="getObservationsByPersonAndConcept_shouldGetObservationsMatchingPersonAndQuestion" classname="org.openmrs.api.ObsServiceTest" time="0.003"/>
+  <testcase name="saveObs_shouldSetStatusToAmendedWhenModifyingAnObsWithFinalStatus" classname="org.openmrs.api.ObsServiceTest" time="0.008"/>
+  <testcase name="getObservations_shouldGetObsMatchingObsIdInSearchString" classname="org.openmrs.api.ObsServiceTest" time="0.009"/>
+  <testcase name="saveObs_shouldCascadeSaveToChildObsGroups" classname="org.openmrs.api.ObsServiceTest" time="0.004"/>
+  <testcase name="shouldNotAutomaticallySetStatusWhenManuallyCopyingAnObs" classname="org.openmrs.api.ObsServiceTest" time="0.004"/>
+  <testcase name="unvoidObs_shouldCascadeUnvoidToChildGroupedObs" classname="org.openmrs.api.ObsServiceTest" time="0.012"/>
+  <testcase name="shouldGetRevisedObs" classname="org.openmrs.api.ObsServiceTest" time="0.021"/>
+  <testcase name="getObservations_shouldGetAllObsWithAnswerConceptInGivenAnswersParameter" classname="org.openmrs.api.ObsServiceTest" time="0.013"/>
+  <testcase name="getObservations_shouldReturnObsWhoseGroupIdIsGivenObsGroupId" classname="org.openmrs.api.ObsServiceTest" time="0.017"/>
+  <testcase name="getObservations_shouldReturnObsWithLocationInGivenLocationsParameter" classname="org.openmrs.api.ObsServiceTest" time="0.004"/>
+  <testcase name="getObservationCount_shouldReturnTheCountOfAllObservationsUsingTheSpecifiedConceptNamesAsAnswers" classname="org.openmrs.api.ObsServiceTest" time="0.005"/>
+  <testcase name="saveObs_shouldSetCreatorAndDateCreatedOnNewObs" classname="org.openmrs.api.ObsServiceTest" time="0.005"/>
+  <testcase name="voidObs_shouldSetVoidedBitOnGivenObs" classname="org.openmrs.api.ObsServiceTest" time="0.004"/>
+  <testcase name="getObservationCount_shouldReturnZeroIfNoObservationIsUsingAnyOfTheConcepNamesInTheList" classname="org.openmrs.api.ObsServiceTest" time="0.003"/>
+  <testcase name="removeHandler_shouldRemoveHandlerWithMatchingKey" classname="org.openmrs.api.ObsServiceTest" time="0.003"/>
+  <testcase name="purgeObs_shouldDeleteTheGivenObsFromTheDatabase" classname="org.openmrs.api.ObsServiceTest" time="0.014"/>
+  <testcase name="saveObs_shouldLetYouChangeStatusFromPreliminaryToFinalWhenModifyingAnObs" classname="org.openmrs.api.ObsServiceTest" time="0.005"/>
+  <testcase name="getObservations_shouldSortReturnedObsByObsDatetimeIfSortIsEmpty" classname="org.openmrs.api.ObsServiceTest" time="0.017"/>
+  <testcase name="saveObs_shouldNotOverwriteFileWhenUpdatingAComplexObs" classname="org.openmrs.api.ObsServiceTest" time="0.019"/>
+  <testcase name="getHandlers_shouldNeverReturnNull" classname="org.openmrs.api.ObsServiceTest" time="0.003"/>
+  <testcase name="getObservationCount_shouldNotIncludeVoidedObsInCount" classname="org.openmrs.api.ObsServiceTest" time="0.015"/>
+  <testcase name="getObservations_shouldSortReturnedObsByConceptIdIfSortIsConcept" classname="org.openmrs.api.ObsServiceTest" time="0.003"/>
+  <testcase name="saveObs_shouldAllowSettingPropertiesOnObs" classname="org.openmrs.api.ObsServiceTest" time="0.004"/>
+  <testcase name="saveObs_shouldCopyTheFormNamespaceAndPathFieldInEditedObs" classname="org.openmrs.api.ObsServiceTest" time="0.015"/>
+  <testcase name="purgeObs_shouldDeleteAnyObsGroupMembersBeforeDeletingTheObs" classname="org.openmrs.api.ObsServiceTest" time="0.013"/>
+  <testcase name="getComplexObs_shouldNotFailWithNullView" classname="org.openmrs.api.ObsServiceTest" time="0.061"/>
+  <testcase name="getHandler_shouldGetHandlerWithMatchingKey" classname="org.openmrs.api.ObsServiceTest" time="0.002"/>
+  <testcase name="getComplexObs_shouldFillInComplexDataObjectForComplexObs" classname="org.openmrs.api.ObsServiceTest" time="0.022"/>
+</testsuite>

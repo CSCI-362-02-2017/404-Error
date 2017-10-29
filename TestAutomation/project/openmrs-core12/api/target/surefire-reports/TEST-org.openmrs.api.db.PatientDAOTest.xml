@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.openmrs.api.db.PatientDAOTest" time="14.26" tests="145" errors="0" skipped="1" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.121-b13"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/MatthewKay/Documents/SeniorYear1stSemester/362/Project/openmrs-core"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/MatthewKay/Documents/SeniorYear1stSemester/362/Project/openmrs-core"/>
+    <property name="java.runtime.version" value="1.8.0_121-b13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/t3/yjzk6jg55p74mpd9yqjw1hsm0000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.3.9/libexec/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/MatthewKay/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.12.6"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/MatthewKay"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="MatthewKay"/>
+    <property name="java.class.path" value="/usr/local/Cellar/maven/3.3.9/libexec/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_121"/>
+    <property name="java.ext.dirs" value="/Users/MatthewKay/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/local/Cellar/maven/3.3.9/libexec"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="getPatients_shouldGetPatientByWholeNameMadeUpOfShortNames_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.249"/>
+  <testcase name="getPatients_shouldGetPatientByWholeNameMadeUpOfShortNames_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.117"/>
+  <testcase name="getDuplicatePatients_shouldGetDuplicatesWithBirthDate" classname="org.openmrs.api.db.PatientDAOTest" time="0.142"/>
+  <testcase name="getPatients_shouldGetOnePatientByRandomCaseAttribute_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.154"/>
+  <testcase name="getPatients_shouldNotGetPatientsByMultipleAttributes_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.12"/>
+  <testcase name="getCountOfPatients_shouldCountZeroPatientsWhenNameAndIdentifierAndListOfIdentifierTypesAreEmpty_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.105"/>
+  <testcase name="getPatients_shouldGetPatientsWithMatchModeAnywhere_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.175"/>
+  <testcase name="getPatients_shouldGetPatientsWithMatchModeAnywhere_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.115"/>
+  <testcase name="getPatients_shouldGetNoPatientByNonexistingAttribute_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.079"/>
+  <testcase name="getCountOfPatients_shouldCountMultiplePatients_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.084"/>
+  <testcase name="getCountOfPatients_shouldCountMultiplePatients_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.083"/>
+  <testcase name="getPatients_shouldNotGetPatientByNonexistingSingleShortName_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.088"/>
+  <testcase name="getPatients_shouldNotGetPatientByNonexistingSingleShortName_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.103"/>
+  <testcase name="getCountOfPatients_shouldNotCountVoidedPatients_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.115"/>
+  <testcase name="getCountOfPatients_shouldNotCountVoidedPatients_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.115"/>
+  <testcase name="getAllPatientIdentifierTypes_shouldNotReturnNullExcludingRetired" classname="org.openmrs.api.db.PatientDAOTest" time="0.089"/>
+  <testcase name="getPatientIdentifiers_shouldNotFetchPatientIdentifiersThatPartiallyMatchesGivenIdentifier" classname="org.openmrs.api.db.PatientDAOTest" time="0.114"/>
+  <testcase name="getPatients_shouldNotGetPatientByNonexistingIdentifier_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.089"/>
+  <testcase name="getPatients_shouldNotGetPatientByNonexistingIdentifier_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.09"/>
+  <testcase name="getAllPatientIdentifierTypes_shouldNotReturnNullIncludingRetired" classname="org.openmrs.api.db.PatientDAOTest" time="0.093"/>
+  <testcase name="getCountOfPatients_shouldCountZeroPatientsWhenQueryIsNull_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.078"/>
+  <testcase name="getPatients_shouldGetPatientsByMultipleShortNameParts_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.083"/>
+  <testcase name="getPatients_shouldGetPatientsByMultipleShortNameParts_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.093"/>
+  <testcase name="getPatients_shouldNotGetPatientByNullIdentifier_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.103"/>
+  <testcase name="getCountOfPatients_shouldObeyAttributeMatchMode" classname="org.openmrs.api.db.PatientDAOTest" time="0.093"/>
+  <testcase name="getPatients_shouldReturnExactMatchFirst" classname="org.openmrs.api.db.PatientDAOTest" time="0.088"/>
+  <testcase name="getAllPatientIdentifierTypes_shouldReturnAll" classname="org.openmrs.api.db.PatientDAOTest" time="0.077"/>
+  <testcase name="getCountOfPatients_shouldCountPatientsByIdentifier_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.077"/>
+  <testcase name="getCountOfPatients_shouldCountPatientsByIdentifier_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.082"/>
+  <testcase name="getPatients_shouldGetPatientByMiddleName_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.109"/>
+  <testcase name="getPatients_shouldGetPatientByMiddleName_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.08"/>
+  <testcase name="getPatients_shouldNotGetPatientsByNullName_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.076"/>
+  <testcase name="getDuplicatePatients_shouldGetDuplicatesWithGenderBirthDate" classname="org.openmrs.api.db.PatientDAOTest" time="0.092"/>
+  <testcase name="getPatients_shouldNotGetPatientsByEmptyName_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.089"/>
+  <testcase name="getPatientIdentifiers_shouldNotGetVoidedPatientIdentifiers" classname="org.openmrs.api.db.PatientDAOTest" time="0.074"/>
+  <testcase name="getPatients_shouldGetNoPatientByVoidedAttribute_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.109"/>
+  <testcase name="getPatientIdentifierTypes_shouldReturnNonRetiredPatientIdentifierTypes_OrderedByRequiredFirst" classname="org.openmrs.api.db.PatientDAOTest" time="0.099"/>
+  <testcase name="getPatients_shouldNotMatchVoidedPatientNames_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.188"/>
+  <testcase name="getPatients_shouldReturnDistinctPatientList_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.089"/>
+  <testcase name="getCountOfPatients_shouldCountPatientsBySearchableAttribute_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.088"/>
+  <testcase name="getPatients_shouldReturnOnlyPatients" classname="org.openmrs.api.db.PatientDAOTest" time="0.095"/>
+  <testcase name="getPatients_shouldGetOnePatientByMultipleNameParts_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.086"/>
+  <testcase name="getPatients_shouldGetPatientByIdentifier_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.103"/>
+  <testcase name="getPatients_shouldGetPatientByIdentifier_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.1"/>
+  <testcase name="getPatients_shouldFindIdentifierIgnoringCase" classname="org.openmrs.api.db.PatientDAOTest" time="0.225"/>
+  <testcase name="getPatients_shouldNotGetPatientsWithMatchModeStart_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.089"/>
+  <testcase name="getPatients_shouldNotGetPatientsWithMatchModeStart_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.079"/>
+  <testcase name="getPatients_shouldGetPatientByFamilyName_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.091"/>
+  <testcase name="getPatients_shouldGetPatientByFamilyName_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.081"/>
+  <testcase name="getPatientIdentifierTypes_shouldReturnNonRetiredPatientIdentifierTypesWithGivenFormat" classname="org.openmrs.api.db.PatientDAOTest" time="0.072"/>
+  <testcase name="getPatientIdentifierTypes_shouldReturnOnlyNonRetiredPatientIdentifierTypes" classname="org.openmrs.api.db.PatientDAOTest" time="0.07"/>
+  <testcase name="getDuplicatePatients_shouldGetZeroDuplicatesWithInvalidAttribute" classname="org.openmrs.api.db.PatientDAOTest" time="0.09"/>
+  <testcase name="getPatients_shouldNotMatchVoidedPatients" classname="org.openmrs.api.db.PatientDAOTest" time="0.161"/>
+  <testcase name="getPatients_shouldGetPatientByShortMiddleName_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.08"/>
+  <testcase name="getPatients_shouldGetPatientByShortMiddleName_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.086"/>
+  <testcase name="getPatientIdentifierTypes_shouldReturnNonRetiredPatientIdentifierTypesThatAreNotRequired" classname="org.openmrs.api.db.PatientDAOTest" time="0.075"/>
+  <testcase name="getPatients_shouldGetPatientBySearchingOnNamesOrIdentifiersAndUsingIdentifierValueAsNameParameter_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.079"/>
+  <testcase name="getPatients_shouldGetPatientByShortFamily2Name_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.073"/>
+  <testcase name="getPatients_shouldGetPatientByShortFamily2Name_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.077"/>
+  <testcase name="getPatients_shouldNotMatchVoidedPatients_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.146"/>
+  <testcase name="getPatients_shouldNotMatchVoidedPatients_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.076"/>
+  <testcase name="getPatients_shouldFindOnlySearchablePersonAttributes" classname="org.openmrs.api.db.PatientDAOTest" time="0.113"/>
+  <testcase name="getPatientIdentifierTypes_shouldReturnNonRetiredPatientIdentifierTypes_OrderedByRequiredAndName" classname="org.openmrs.api.db.PatientDAOTest" time="0.069"/>
+  <testcase name="getPatients_shouldFindTheNextFourOutOfElevenPatients_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.081"/>
+  <testcase name="getPatients_shouldFindTheRemainingThreeOutOfElevenPatients_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.096"/>
+  <testcase name="getPatientIdentifierTypes_shouldReturnNonRetiredPatientIdentifierTypes_OrderedByRequiredNameAndTypeId" classname="org.openmrs.api.db.PatientDAOTest" time="0.097"/>
+  <testcase name="getPatients_shouldEscapeUnderscoreCharacterInIdentifierPhrase" classname="org.openmrs.api.db.PatientDAOTest" time="0.377"/>
+  <testcase name="getPatients_shouldGetNoVoidedPersonWhenVoidedFalseIsPassed" classname="org.openmrs.api.db.PatientDAOTest" time="0.096"/>
+  <testcase name="getPatients_shouldGetPatientByShortFamilyName_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.085"/>
+  <testcase name="getPatients_shouldGetPatientByShortFamilyName_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.099"/>
+  <testcase name="getPatientIdentifiers_shouldReturnAllMatchingNonVoidedPatientIdentifiersIfIsPreferredIsSetToNull" classname="org.openmrs.api.db.PatientDAOTest" time="0.098"/>
+  <testcase name="getPatientIdentifiers_shouldReturnAllMatchingNonVoidedPatientIdentifiersIfIsPreferredIsSetToTrue" classname="org.openmrs.api.db.PatientDAOTest" time="0.073"/>
+  <testcase name="getPatients_shouldGetVoidedPersonWhenVoidedTrueIsPassed" classname="org.openmrs.api.db.PatientDAOTest" time="0.077"/>
+  <testcase name="getPatients_shouldGetMultiplePatientsBySingleAttribute_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.085"/>
+  <testcase name="getPatients_shouldFindElevenOutOfElevenPatients_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.083"/>
+  <testcase name="getPatients_shouldNotGetPatientByVoidedIdentifier_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.071"/>
+  <testcase name="getPatients_shouldNotGetPatientByVoidedIdentifier_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.074"/>
+  <testcase name="getPatients_shouldNotGetPatientByMixOfExistingAndNonexistingNameParts_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.08"/>
+  <testcase name="getPatients_shouldNotGetPatientByMixOfExistingAndNonexistingNameParts_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.078"/>
+  <testcase name="getCountOfPatients_shouldCountSinglePatient_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.072"/>
+  <testcase name="getCountOfPatients_shouldCountSinglePatient_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.077"/>
+  <testcase name="getPatients_shouldNotGetPatientByNonexistingShortNameParts_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.075"/>
+  <testcase name="getPatients_shouldNotGetPatientByNonexistingShortNameParts_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.103"/>
+  <testcase name="getPatientIdentifiers_shouldReturnAllMatchingNonVoidedPatientIdentifiersIfIsPreferredIsSetToFalse" classname="org.openmrs.api.db.PatientDAOTest" time="0.099"/>
+  <testcase name="getPatientIdentifiers_shouldFetchAllPatientIdentifiersBelongToGivenPatients" classname="org.openmrs.api.db.PatientDAOTest" time="0.104"/>
+  <testcase name="getPatients_shouldGetPatientsWithMatchModeStart_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.091"/>
+  <testcase name="getPatients_shouldGetPatientsWithMatchModeStart_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.11"/>
+  <testcase name="getCountOfPatients_shouldCountPatientsByName_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.074"/>
+  <testcase name="getCountOfPatients_shouldCountPatientsByName_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.071"/>
+  <testcase name="getPatients_shouldNotGetPatientsWithMatchModeAnywhere_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.076"/>
+  <testcase name="getPatients_shouldNotGetPatientsWithMatchModeAnywhere_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.104"/>
+  <testcase name="getPatients_shouldGetPatientByFamily2Name_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.109"/>
+  <testcase name="getPatients_shouldGetPatientByFamily2Name_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.098"/>
+  <testcase name="getPatients_shouldNotGetPatientsByNegativeLength_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.087"/>
+  <testcase name="getPatientIdentifiers_shouldFetchPatientIdentifiersThatEqualsGivenIdentifier" classname="org.openmrs.api.db.PatientDAOTest" time="0.068"/>
+  <testcase name="getPatients_shouldEscapeAnAsterixCharacterInNamePhrase" classname="org.openmrs.api.db.PatientDAOTest" time="0.211"/>
+  <testcase name="getAllPatientIdentifierTypes_shouldReturnOrdered" classname="org.openmrs.api.db.PatientDAOTest" time="0.094"/>
+  <testcase name="getPatients_shouldEscapeAnAsterixCharacterInIdentifierPhrase" classname="org.openmrs.api.db.PatientDAOTest" time="0.216"/>
+  <testcase name="getDuplicatePatients_shouldGetDuplicatesWithGenderBirthDateGivenNameFamilyNameIdentifier" classname="org.openmrs.api.db.PatientDAOTest" time="0.079"/>
+  <testcase name="getPatients_shouldEscapePercentageCharacterInIdentifierPhrase" classname="org.openmrs.api.db.PatientDAOTest" time="0.176"/>
+  <testcase name="getPatients_shouldFindPatientsWithNullAsStart_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.081"/>
+  <testcase name="getPatients_shouldGetOnePatientByAttribute_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.103"/>
+  <testcase name="getDuplicatePatients_shouldGetDuplicatesWithGenderBirthDateGivenName" classname="org.openmrs.api.db.PatientDAOTest" time="0.127"/>
+  <testcase name="getPatients_shouldFindPatientsEfficiently" classname="org.openmrs.api.db.PatientDAOTest" time="0">
+    <skipped message="Designated for manual runs"/>
+  </testcase>
+  <testcase name="getPatients_shouldGetPatientByWholeName_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.077"/>
+  <testcase name="getPatients_shouldGetPatientByWholeName_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.084"/>
+  <testcase name="getCountOfPatients_shouldCountZeroPatientsForNonmatchingQuery_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.1"/>
+  <testcase name="getCountOfPatients_shouldCountZeroPatientsForNonmatchingQuery_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.077"/>
+  <testcase name="getPatients_shouldNotGetPatientByMixOfExistingAndNonexistingShortNameParts_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.1"/>
+  <testcase name="getPatients_shouldNotGetPatientByMixOfExistingAndNonexistingShortNameParts_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.084"/>
+  <testcase name="getPatients_shouldFindTheFirstFourOutOfElevenPatients_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.098"/>
+  <testcase name="getPatientIdentifierTypes_shouldReturnNonRetiredPatientIdentifierTypesWithGivenName" classname="org.openmrs.api.db.PatientDAOTest" time="0.082"/>
+  <testcase name="getPatients_shouldFindPatientsWithNullAsLength_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.083"/>
+  <testcase name="getPatients_shouldNotGetPatientByVoidedName_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.076"/>
+  <testcase name="getPatients_shouldNotGetPatientByVoidedName_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.08"/>
+  <testcase name="getCountOfPatients_shouldCountZeroPatientsWhenQueryIsEmpty_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.094"/>
+  <testcase name="getPatients_shouldNotGetPatientsByNullQuery_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.095"/>
+  <testcase name="getPatients_shouldEscapePercentageCharacterInNamePhrase" classname="org.openmrs.api.db.PatientDAOTest" time="0.219"/>
+  <testcase name="getAllPatientIdentifierTypes_shouldNotReturnRetired" classname="org.openmrs.api.db.PatientDAOTest" time="0.072"/>
+  <testcase name="getPatients_shouldFindPatientsWithNegativeStart_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.08"/>
+  <testcase name="getPatients_shouldGetPatientByShortGivenName_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.096"/>
+  <testcase name="getPatients_shouldGetPatientByShortGivenName_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.102"/>
+  <testcase name="getPatientIdentifiers_shouldFetchAllPatientIdentifiersBelongToGivenPatient" classname="org.openmrs.api.db.PatientDAOTest" time="0.09"/>
+  <testcase name="getPatients_shouldGetPatientBySearchingOnNamesOrIdentifiersAndUsingNameValueAsIdentifierParameter_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.072"/>
+  <testcase name="getPatients_shouldNotGetPatientByNonexistingNameParts_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.079"/>
+  <testcase name="getPatients_shouldNotGetPatientByNonexistingNameParts_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.11"/>
+  <testcase name="getPatients_shouldGetPatientByGivenName_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.079"/>
+  <testcase name="getPatients_shouldGetPatientByGivenName_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.081"/>
+  <testcase name="getPatients_shouldNotMatchVoidedPatientNames" classname="org.openmrs.api.db.PatientDAOTest" time="0.143"/>
+  <testcase name="getPatients_shouldNotGetPatientsByZeroLength_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.069"/>
+  <testcase name="getPatients_shouldNotGetPatientByVoidedShortName_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.074"/>
+  <testcase name="getPatients_shouldNotGetPatientByVoidedShortName_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.072"/>
+  <testcase name="getPatients_shouldGetNoPatientByNonsearchableAttribute_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.074"/>
+  <testcase name="getCountOfPatients_shouldCountZeroPatientsWhenNameAndIdentifierAndListOfIdentifierTypesAreNull_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.067"/>
+  <testcase name="getDuplicatePatients_shouldGetDuplicatesWithGenderBirthDateGivenNameFamilyName" classname="org.openmrs.api.db.PatientDAOTest" time="0.083"/>
+  <testcase name="getPatientIdentifiers_shouldLimitByResultsByLocation" classname="org.openmrs.api.db.PatientDAOTest" time="0.07"/>
+  <testcase name="getPatients_shouldNotGetPatientByEmptyIdentifier_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.07"/>
+  <testcase name="getPatients_shouldNotGetPatientsBySearchingForNonvoidedAndVoidedAttribute_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.1"/>
+  <testcase name="getPatients_shouldEscapeUnderscoreCharacterInNamePhrase" classname="org.openmrs.api.db.PatientDAOTest" time="0.181"/>
+  <testcase name="getPatientIdentifierTypes_shouldReturnNonRetiredPatientIdentifierTypesThatAreRequired" classname="org.openmrs.api.db.PatientDAOTest" time="0.088"/>
+  <testcase name="getPatients_shouldNotGetPatientByNonexistingSingleName_SignatureNo1" classname="org.openmrs.api.db.PatientDAOTest" time="0.089"/>
+  <testcase name="getPatients_shouldNotGetPatientByNonexistingSingleName_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.09"/>
+  <testcase name="getDuplicatePatients_shouldGetDuplicatesWithBirthDateInvalidAttribute" classname="org.openmrs.api.db.PatientDAOTest" time="0.08"/>
+  <testcase name="getPatients_shouldNotGetPatientsByEmptyQuery_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.067"/>
+  <testcase name="getPatients_shouldFindPatientsWithExcessiveLength_SignatureNo2" classname="org.openmrs.api.db.PatientDAOTest" time="0.076"/>
+</testsuite>
