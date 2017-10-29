@@ -10,6 +10,6 @@
 004
 Testing that the compareNatural method will return a positive number if s lexicographically follows t
 compareNatural(String s, String t, boolean caseSensitive, Collator collator) in the NaturalString.java class
-driverNaturalString.java
+NaturalStringDriver.java
 "test", "check", true, NULL
 17
