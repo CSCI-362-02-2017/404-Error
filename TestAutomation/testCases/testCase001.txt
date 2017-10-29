@@ -10,6 +10,6 @@
 001
 This is testing that the compareNatural method will return a 0 if the two strings are equal
 compareNatural(String s, String t, boolean caseSensitive, Collator collator) in the NaturalString.java class
-driverNaturalString.java
+NaturalStringDriver.java
 "test", "test", true, NULL
 0
