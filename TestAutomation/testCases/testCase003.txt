@@ -1,0 +1,15 @@
+# Test cases are written in the following format:
+# 1. Test Case ID
+# 2. Requirement being tested
+#	3. Component being tested
+# 4. Driver being used
+# 5. Test Inputs(s)
+#	6. Expected Result
+#
+
+003
+Testing that the compareNatural method will return a positive number if s lexicographically follows tNaturalString.java
+compareNatural(String s, String t, boolean caseSensitive, Collator collator) in the NaturalString.java class
+driverNaturalString.java
+"test", "string", true, NULL
+1
