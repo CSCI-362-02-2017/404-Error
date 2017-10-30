@@ -50,7 +50,7 @@ for file in ../testCases/*; do
 
 	#Get result from driver
 	#result=$(java -cp "./:../project/openmrs-core/api/" $driver $input)
-	result=$(java -cp NaturalStringDriver $input)
+	result=$(java -cp NaturalStringDriver $inputs)
 
 	# need to round the result to 2 deci http://stackoverflow.com/questions/26465496/rounding-up-float-point-numbers-bash
 	# http://unix.stackexchange.com/questions/167058/how-to-round-floating-point-numbers-in-shell
