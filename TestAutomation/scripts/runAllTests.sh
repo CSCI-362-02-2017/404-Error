@@ -37,7 +37,7 @@ for file in ../testCases/*; do
 	expOutput=$(sed -n '17p' "$file")
 
 	#Run the correct driver
-	javac -cp ../project/openmrs-core/api/src/main/java/org/openmrs/util *.java
+	javac -cp ../project/openmrs-core/api/src/main/java/org/openmrs/util *
 	echo $PWD
 	cd ../../../../../../../../../testCasesExecutables
 	echo $PWD
