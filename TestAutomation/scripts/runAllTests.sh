@@ -34,11 +34,13 @@ for file in ../testCases/*; do
 	class=$(sed -n '14p' "$file")
 	driver=$(sed -n '15p' "$file")
 	inputs=$(sed -n '16p' "$file")
-	expOutputs=$(sed -n '17p' "$file")
+	expOutput=$(sed -n '17p' "$file")
 
 	#Run the correct driver
-	javac -cp ../project/openmrs-core/api/src/main/java/org/openmrs/util *
+	javac -cp ../project/openmrs-core/api/src/main/java/org/openmrs/util *.java
+	echo $PATH
 	cd ../../../../../../../../../testCasesExecutables
+	echo $PATH
 	javac -cp NaturalStringDriver.java
 
 
@@ -62,7 +64,7 @@ for file in ../testCases/*; do
 	echo "Class: $class"
 	echo "Driver: $driver"
 	echo "Inputs: $inputs"
-	echo "Expected Outputs: $expOutputs"
+	echo "Expected Output: $expOutput"
 	echo "Result: $result"
 	echo ""
 
