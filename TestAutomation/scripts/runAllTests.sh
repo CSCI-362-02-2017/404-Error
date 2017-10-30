@@ -38,9 +38,9 @@ for file in ../testCases/*; do
 
 	#Run the correct driver
 	javac -cp ../project/openmrs-core/api/src/main/java/org/openmrs/util *.java
-	echo $PATH
+	echo $PWD
 	cd ../../../../../../../../../testCasesExecutables
-	echo $PATH
+	echo $PWD
 	javac -cp NaturalStringDriver.java
 
 
