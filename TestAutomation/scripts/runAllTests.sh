@@ -20,7 +20,7 @@ echo "<!DOCTYPE html>
 				<div class=\"head\">Class</div>
 				<div class=\"head\">Driver</div>
 				<div class=\"head\">Inputs</div>
-				<div class=\"head\">Expected Outputs</div>
+				<div class=\"head\">Expected Output</div>
 				<div class=\"head\">Result</div>
 			</div>" > ../reports/testReport.html
 
