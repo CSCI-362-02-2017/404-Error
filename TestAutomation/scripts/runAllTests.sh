@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Change to directory of script.
-cd TestAutomation/testCases
+cd ../testCases
 
 #Create report
 echo "<!DOCTYPE html>
