@@ -28,6 +28,7 @@ cd ../project/openmrs-core/api/src/main/java/org/openmrs/util
 #javac ../project/openmrs-core/api/src/main/java/org/openmrs/util/*.java
 javac -cp NaturalStrings.java
 #Run tests
+cd ../../../../../../../..
 for file in ../testCases/*; do
 
 	#Get variables from text files
