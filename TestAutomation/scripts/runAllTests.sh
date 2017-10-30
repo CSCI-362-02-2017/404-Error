@@ -24,7 +24,7 @@ echo "<!DOCTYPE html>
 				<div class=\"head\">Result</div>
 			</div>" > ../reports/testReport.html
 echo $PWD
-javac -cp ../project/openmrs-core/api/src/main/java/org/openmrs/util *
+javac -cp ../project/openmrs-core/api/src/main/java/org/openmrs/util NaturalStrings.java
 #Run tests
 for file in ../testCases/*; do
 
@@ -40,7 +40,7 @@ for file in ../testCases/*; do
 	#Run the correct driver
 	#javac -cp ../project/openmrs-core/api/src/main/java/org/openmrs/util *
 	echo $PWD
-	cd ../../../../../../../../../testCasesExecutables
+	cd ../testCasesExecutables
 	echo $PWD
 	javac -cp NaturalStringDriver.java
 
