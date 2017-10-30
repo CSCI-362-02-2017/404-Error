@@ -37,7 +37,7 @@ for file in ../testCases/*; do
 	expOutputs=$(sed -n '17p' "$file")
 
 	#Run the correct driver
-	javac -d ../project/openmrs-core/api/src/main/java/org/openmrs/util/ NaturalStrings.java
+	javac -cp ../project/openmrs-core/api/src/main/java/org/openmrs/util *
 	cd ../../../../../../../../../testCasesExecutables
 	javac -cp NaturalStringDriver.java
 
