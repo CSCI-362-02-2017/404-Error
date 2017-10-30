@@ -3,7 +3,7 @@ package org.openmrs.util;
 import java.text.Collator;
 import java.util.Comparator;
 
-public class NaturalStringTestCase{
+public class NaturalStringDriver{
 	public static void main(String args[]){
 		NaturalStrings testNS = new NaturalStrings();
 		String[] temp = args[0].split(", ");
