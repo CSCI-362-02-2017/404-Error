@@ -23,7 +23,8 @@ echo "<!DOCTYPE html>
 				<div class=\"head\">Expected Output</div>
 				<div class=\"head\">Result</div>
 			</div>" > ../reports/testReport.html
-
+echo $PWD
+javac -cp ../project/openmrs-core/api/src/main/java/org/openmrs/util *
 #Run tests
 for file in ../testCases/*; do
 
@@ -37,7 +38,7 @@ for file in ../testCases/*; do
 	expOutput=$(sed -n '17p' "$file")
 
 	#Run the correct driver
-	javac -cp ../project/openmrs-core/api/src/main/java/org/openmrs/util *
+	#javac -cp ../project/openmrs-core/api/src/main/java/org/openmrs/util *
 	echo $PWD
 	cd ../../../../../../../../../testCasesExecutables
 	echo $PWD
