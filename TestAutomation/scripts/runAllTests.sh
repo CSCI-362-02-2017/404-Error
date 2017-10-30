@@ -24,7 +24,7 @@ echo "<!DOCTYPE html>
 				<div class=\"head\">Result</div>
 			</div>" > ../reports/testReport.html
 echo $PWD
-javac -cp ../project/openmrs-core/api/src/main/java/org/openmrs/util/NaturalStrings.java
+javac ../project/openmrs-core/api/src/main/java/org/openmrs/util NaturalStrings.java
 #Run tests
 for file in ../testCases/*; do
 
