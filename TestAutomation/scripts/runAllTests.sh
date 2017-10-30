@@ -24,7 +24,9 @@ echo "<!DOCTYPE html>
 				<div class=\"head\">Result</div>
 			</div>" > ../reports/testReport.html
 echo $PWD
-javac ../project/openmrs-core/api/src/main/java/org/openmrs/util/*.java
+cd ../project/openmrs-core/api/src/main/java/org/openmrs/util
+#javac ../project/openmrs-core/api/src/main/java/org/openmrs/util/*.java
+javac -cp NaturalStrings.java
 #Run tests
 for file in ../testCases/*; do
 
@@ -42,7 +44,7 @@ for file in ../testCases/*; do
 	echo $PWD
 	cd ../testCasesExecutables
 	echo $PWD
-	javac NaturalStringDriver.java
+	javac -cp NaturalStringDriver.java
 
 
 	#Change to parent directory
