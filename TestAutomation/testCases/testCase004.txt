@@ -13,5 +13,5 @@ Testing that the compareNatural method will return a positive number if s lexico
 compareNaturalAscii(String s, String t)
 NaturalStrings.java
 NaturalStringDriver.java
-"test", "check"
+test, check
 17
