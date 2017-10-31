@@ -11,7 +11,7 @@
 002
 Testing that the compareNatural method will return a negative number if s lexicographically precedes t
 compareNatural(String s, String t)
-NaturalString.java
+NaturalStrings.java
 NaturalStringDriver.java
 "test", "white"
 -3
