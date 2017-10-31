@@ -43,27 +43,9 @@ for file in ../testCases/*; do
 	expOutput=$(sed -n '17p' "$file")
 
 	#Run the correct driver
-	#javac -cp ../project/openmrs-core/api/src/main/java/org/openmrs/util *
-	echo $PWD
-	#cd ../testCasesExecutables
-	echo $PWD
-	#cd ../project/openmrs-core/api/src/main/java/org/openmrs/util
-	echo $PWD
-	#javac -cp ../project/openmrs-core/api/src/main/java/org/openmrs/util NaturalStringDriver.java
-	#javac -cp . NaturalStringDriver.java
-
-
-	#Change to parent directory
-	#cd ../testCasesExecutables
-	#cd..
-
-	#Get result from driver
-	#result=$(java -cp "./:../project/openmrs-core/api/" $driver $input)
-	result=$(java -cp ../project/openmrs-core/api/src/main/java/org/openmrs/util NaturalStringDriver $inputs)
-
-	# need to round the result to 2 deci http://stackoverflow.com/questions/26465496/rounding-up-float-point-numbers-bash
-	# http://unix.stackexchange.com/questions/167058/how-to-round-floating-point-numbers-in-shell
-	#result=$(echo $result | xargs printf "%.*f\n" 2)
+	cd ../project/openmrs-core/api/src/main/java
+	result=$(java -cp . org.openmrs.util.NaturalStringDriver "$inputs")	
+	cd ../../../../..
 
 	#Dump test case info into terminal
 	echo "---------------------"
@@ -87,7 +69,8 @@ for file in ../testCases/*; do
 				<div class=\"cell\">$result</div>" >> ../reports/testReport.html
 
 	#Compare the output to expected and determine pass or fail
-	if [ "$expected" == "$result" ]; then
+	if [ "$expected == $result" ]
+	 then
 		echo "				<div class=\"cell pass\">Pass</div>" >> ../reports/testReport.html
 	else
 		echo "				<div class=\"cell fail\">Fail</div>" >> ../reports/testReport.html
