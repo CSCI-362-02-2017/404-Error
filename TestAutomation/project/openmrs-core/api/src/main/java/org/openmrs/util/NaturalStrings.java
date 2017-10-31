@@ -48,7 +48,7 @@ public final class NaturalStrings {
 	
 	
 	
-	private static final Comparator<String> NATURAL_COMPARATOR_ASCII = new Comparator<String>() {
+	public static final Comparator<String> NATURAL_COMPARATOR_ASCII = new Comparator<String>() {
 		
 		@Override
 		public int compare(String o1, String o2) {
@@ -66,7 +66,7 @@ public final class NaturalStrings {
 	 * characters.
 	 * </p>
 	 */
-	private static final Comparator<String> IGNORE_CASE_NATURAL_COMPARATOR_ASCII = new Comparator<String>() {
+	public static final Comparator<String> IGNORE_CASE_NATURAL_COMPARATOR_ASCII = new Comparator<String>() {
 		
 		@Override
 		public int compare(String o1, String o2) {
@@ -77,7 +77,7 @@ public final class NaturalStrings {
 	/**
 	 * This is a utility class (static methods only), don't instantiate.
 	 */
-	private NaturalStrings() {
+	public NaturalStrings() {
 	}
 	
 	/**
@@ -246,7 +246,7 @@ public final class NaturalStrings {
 	 *         <code>s</code> lexicographically precedes <code>t</code> and a value larger than zero
 	 *         iff <code>s</code> lexicographically follows <code>t</code>
 	 */
-	private static int compareNatural(String s, String t, boolean caseSensitive, Collator collator) {
+	public static int compareNatural(String s, String t, boolean caseSensitive, Collator collator) {
 		int sIndex = 0;
 		int tIndex = 0;
 		
