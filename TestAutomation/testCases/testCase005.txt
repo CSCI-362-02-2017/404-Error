@@ -10,7 +10,7 @@
 
 005
 Testing that the compareNatural method will return a positive number if s lexicographically follows t
-compareNatural(String s, String t)
+compareNaturalAscii(String s, String t)
 NaturalStrings.java
 NaturalStringDriver.java
 "test", "pneumonia"

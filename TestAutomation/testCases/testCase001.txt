@@ -10,7 +10,7 @@
 
 001
 This is testing that the compareNatural method will return a 0 if the two strings are equal
-compareNatural(String s, String t)
+compareNaturalAscii(String s, String t)
 NaturalStrings.java
 NaturalStringDriver.java
 "test", "test"
