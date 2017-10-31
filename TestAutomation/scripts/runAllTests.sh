@@ -33,26 +33,19 @@ for file in ../testCases/*; do
 
 	#Get variables from text files
 	test=$(sed -n '11p' "$file")
-	echo $test
 	req=$(sed -n '12p' "$file")
-	echo $req
 	method=$(sed -n '13p' "$file")
-	echo $method
 	class=$(sed -n '14p' "$file")
-	echo $class
 	driver=$(sed -n '15p' "$file")
-	echo $driver
 	inputs=$(sed -n '16p' "$file")
-	echo $inputs
 	expOutput=$(sed -n '17p' "$file")
-	echo $expOutput
 
 	#Run the correct driver
 	#javac -cp ../project/openmrs-core/api/src/main/java/org/openmrs/util *
 	echo $PWD
 	cd ../testCasesExecutables
 	echo $PWD
-	javac -cp . NaturalStringDriver.java
+	javac -d ../project/openmrs-core/api/src/main/java/org/openmrs/util NaturalStringDriver.java
 
 
 	#Change to parent directory
