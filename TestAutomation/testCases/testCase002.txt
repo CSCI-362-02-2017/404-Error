@@ -13,5 +13,5 @@ Testing that the compareNatural method will return a negative number if s lexico
 compareNaturalAscii(String s, String t)
 NaturalStrings.java
 NaturalStringDriver.java
-"test", "white"
+test, white
 -3
