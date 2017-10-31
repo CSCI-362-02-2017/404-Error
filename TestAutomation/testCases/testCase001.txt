@@ -13,5 +13,5 @@ This is testing that the compareNatural method will return a 0 if the two string
 compareNaturalAscii(String s, String t)
 NaturalStrings.java
 NaturalStringDriver.java
-"test", "test"
+test, test
 0
