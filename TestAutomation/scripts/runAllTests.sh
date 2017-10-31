@@ -24,11 +24,13 @@ echo "<!DOCTYPE html>
 				<div class=\"head\">Result</div>
 			</div>" > ../reports/testReport.html
 echo $PWD
-cd ../project/openmrs-core/api/src/main/java/org/openmrs/util
+#cd ../project/openmrs-core/api/src/main/java/org/openmrs/
+#cd ..
 #javac ../project/openmrs-core/api/src/main/java/org/openmrs/util/*.java
-javac -cp . NaturalStrings.java
+javac -cp . ../project/openmrs-core/api/src/main/java/org/openmrs/util/NaturalStrings.java ../project/openmrs-core/api/src/main/java/org/openmrs/util/NaturalStringDriver.java
+#NaturalStrings.java
 #Run tests
-cd ../../../../../../../..
+#cd ../../../../../../..
 for file in ../testCases/*; do
 
 	#Get variables from text files
@@ -43,17 +45,21 @@ for file in ../testCases/*; do
 	#Run the correct driver
 	#javac -cp ../project/openmrs-core/api/src/main/java/org/openmrs/util *
 	echo $PWD
-	cd ../testCasesExecutables
+	#cd ../testCasesExecutables
 	echo $PWD
-	javac -d ../project/openmrs-core/api/src/main/java/org/openmrs/util NaturalStringDriver.java
+	#cd ../project/openmrs-core/api/src/main/java/org/openmrs/util
+	echo $PWD
+	#javac -cp ../project/openmrs-core/api/src/main/java/org/openmrs/util NaturalStringDriver.java
+	#javac -cp . NaturalStringDriver.java
 
 
 	#Change to parent directory
-	cd ../testCasesExecutables
+	#cd ../testCasesExecutables
+	#cd..
 
 	#Get result from driver
 	#result=$(java -cp "./:../project/openmrs-core/api/" $driver $input)
-	result=$(java -cp NaturalStringDriver $inputs)
+	result=$(java -cp ../project/openmrs-core/api/src/main/java/org/openmrs/util NaturalStringDriver.class $inputs)
 
 	# need to round the result to 2 deci http://stackoverflow.com/questions/26465496/rounding-up-float-point-numbers-bash
 	# http://unix.stackexchange.com/questions/167058/how-to-round-floating-point-numbers-in-shell
