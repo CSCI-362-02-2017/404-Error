@@ -11,7 +11,7 @@
 003
 Testing that the compareNatural method will return a positive number if s lexicographically follows t
 compareNatural(String s, String t)
-NaturalString.java
+NaturalStrings.java
 NaturalStringDriver.java
 "test", "string"
 1
