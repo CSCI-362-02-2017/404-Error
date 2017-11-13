@@ -13,5 +13,5 @@ This is testing that the correct boolean value will be printed from the isString
 isStringInArray(String str, String[] arr)
 OpenmrsUtil.java
 OpenmrsUtilDriver.java
-random, [“random”, “test”, “computer”]
+random, random, test, computer
 true
