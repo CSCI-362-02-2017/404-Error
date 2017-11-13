@@ -1,0 +1,18 @@
+# Test cases are written in the following format:
+# 1. Test Case ID
+# 2. Requirement being tested
+# 3. Component being tested
+# 4. Class
+# 5. Driver being used
+# 6. Test Inputs(s)
+# 7. Expected Result
+#
+
+016
+This is testing that the correct boolean value will be printed from the containsDigit(String str) method in OpenmrsUtil.java
+containsDigit(String str)
+OpenmrsUtilDriver3.java
+ddddddd9
+true
+
+
