@@ -23,14 +23,11 @@ echo "<!DOCTYPE html>
 				<div class=\"head\">Expected Output</div>
 				<div class=\"head\">Result</div>
 			</div>" > ../reports/testReport.html
-echo $PWD
-#cd ../project/openmrs-core/api/src/main/java/org/openmrs/
-#cd ..
-#javac ../project/openmrs-core/api/src/main/java/org/openmrs/util/*.java
-javac -cp . ../project/openmrs-core/api/src/main/java/org/openmrs/util/NaturalStrings.java ../project/openmrs-core/api/src/main/java/org/openmrs/util/NaturalStringDriver.java
-#NaturalStrings.java
-#Run tests
-#cd ../../../../../../..
+#echo $PWD
+javac -cp . ../project/openmrs-core/api/src/main/java/org/openmrs/util/NaturalStrings.java ../project/openmrs-core/api/src/main/java/org/openmrs/util/NaturalStringDriver.java ../project/openmrs-core/api/src/main/java/org/openmrs/util/NaturalStringDriver2.java
+#echo $PWD
+javac -cp . ../project/openmrs-core/api/src/main/java/org/openmrs/util/OpenmrsUtil.java ../project/openmrs-core/api/src/main/java/org/openmrs/util/OpenmrsUtilDriver.java ../project/openmrs-core/api/src/main/java/org/openmrs/util/OpenmrsUtilDriver2.java ../project/openmrs-core/api/src/main/java/org/openmrs/util/OpenmrsUtilDriver3.java
+
 for file in ../testCases/*; do
 
 	#Get variables from text files
@@ -43,8 +40,9 @@ for file in ../testCases/*; do
 	expOutput=$(sed -n '17p' "$file")
 
 	#Run the correct driver
+	#echo "driver is: $driver"
 	cd ../project/openmrs-core/api/src/main/java
-	result=$(java -cp . org.openmrs.util.NaturalStringDriver "$inputs")	
+	result=$(java -cp . $driver "$inputs")
 	cd ../../../../..
 
 	#Dump test case info into terminal

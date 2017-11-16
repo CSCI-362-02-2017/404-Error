@@ -1,7 +1,7 @@
 package org.openmrs.util;
 
-import java.text.Collator;
-import java.util.Comparator;
+//import java.text.Collator;
+//import java.util.Comparator;
 //import org.openmrs.util.*;
 
 public class NaturalStringDriver{

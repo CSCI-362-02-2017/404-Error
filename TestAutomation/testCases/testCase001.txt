@@ -12,6 +12,6 @@
 This is testing that the compareNatural method will return a 0 if the two strings are equal
 compareNaturalAscii(String s, String t)
 NaturalStrings.java
-NaturalStringDriver.java
+org.openmrs.util.NaturalStringDriver
 test, test
 0
