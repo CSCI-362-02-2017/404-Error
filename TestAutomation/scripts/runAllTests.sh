@@ -96,4 +96,4 @@ echo "</table>
 </html>" >> ../reports/testReport.html
 
 #Open report
-open ../reports/testReport.html
+xdg-open ../reports/testReport.html
