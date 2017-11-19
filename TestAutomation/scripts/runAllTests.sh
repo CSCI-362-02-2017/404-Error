@@ -81,9 +81,9 @@ for file in ../testCases/*; do
 	#Compare the output to expected and determine pass or fail
 	if [ "$expected == $result" ]
 	 then
-		echo "<td>Pass</td>" >> ../reports/testReport.html
+		echo "<td bgcolor="green">Pass</td>" >> ../reports/testReport.html
 	else
-		echo "<td>Fail</td>" >> ../reports/testReport.html
+		echo "<td bgcolor="red" >Fail</td>" >> ../reports/testReport.html
 	fi
 
 
