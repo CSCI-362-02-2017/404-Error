@@ -18,6 +18,8 @@ table, th, td {
 <body>
 
 <table style="width:100%">
+<center><br>Team 404-Error Openmrs Testing Results<br><br></center>
+
   <tr>
     <th>Test</th>
     <th>Requirement</th> 
@@ -96,4 +98,4 @@ echo "</table>
 </html>" >> ../reports/testReport.html
 
 #Open report
-xdg-open ../reports/testReport.html
+open ../reports/testReport.html
