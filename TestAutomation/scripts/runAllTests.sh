@@ -5,27 +5,6 @@ cd ../testCases
 
 #Create report
 
-#
-##echo "<!DOCTYPE html>
-##<html>
-##	<head>
-#		<meta charset="UTF-8">
-#		<title>openMRS Tests</title>
-#		<link rel=\"stylesheet\" type=\"text/css\" href=\"../reports/style.css\" />
-#	</head>
-#	<body>
-#		<div id=\"table\">
-#			<div class=\"row\">
-#				<div class=\"head\">TestCase ID</div>
-#				<div class=\"head\">Requirement</div>
-#				<div class=\"head\">Method</div>
-#				<div class=\"head\">Class</div>
-#				<div class=\"head\">Driver</div>
-#				<div class=\"head\">Inputs</div>
-#				<div class=\"head\">Expected Output</div>
-#				<div class=\"head\">Result</div>
-#			</div>" > ../reports/testReport.html
-
 
 echo "<!DOCTYPE html>
 <html>
