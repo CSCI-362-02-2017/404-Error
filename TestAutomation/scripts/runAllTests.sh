@@ -17,13 +17,10 @@ table, th, td {
 </head>
 <body>
 
-<<<<<<< HEAD
-<table style="width:50%">
-=======
 <table style="width:100%">
 <center><br>Team 404-Error Openmrs Testing Results<br><br></center>
 
->>>>>>> 1fe71d75565147f34c4d494e7e5c820d93e81987
+
   <tr>
     <th>Test</th>
     <th>Requirement</th> 
