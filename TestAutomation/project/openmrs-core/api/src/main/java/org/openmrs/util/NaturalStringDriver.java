@@ -2,7 +2,7 @@ package org.openmrs.util;
 
 //import java.text.Collator;
 //import java.util.Comparator;
-//import org.openmrs.util.*;
+//import NaturalStrings;
 
 public class NaturalStringDriver{
 	public static void main(String args[]){
@@ -13,4 +13,3 @@ public class NaturalStringDriver{
 		System.out.println(Integer.valueOf(testNS.compareNaturalAscii(s, t)));
 	}
 }
-		

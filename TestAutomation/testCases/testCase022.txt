@@ -12,6 +12,7 @@
 Testing that the compareNatural method will return a negative number if s lexicographically precedes t
 compareNaturalIgnoreCaseAscii(String s, String t)
 NaturalStrings.java
-org.openmrs.util.NaturalStringDriver2
+NaturalStringDriver2
 Test, whITe
 -3
+org.openmrs.util.

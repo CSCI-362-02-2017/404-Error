@@ -12,6 +12,7 @@
 Testing that the compareNatural method will return a positive number if s lexicographically follows t
 compareNaturalAscii(String s, String t)
 NaturalStrings.java
-org.openmrs.util.NaturalStringDriver
+NaturalStringDriver
 test, string
 1
+org.openmrs.util.

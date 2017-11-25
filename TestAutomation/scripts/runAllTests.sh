@@ -23,19 +23,22 @@ table, th, td {
 
   <tr>
     <th>Test</th>
-    <th>Requirement</th> 
+    <th>Requirement</th>
     <th>Method</th>
-    <th>Class</th> 
+    <th>Class</th>
     <th>Driver</th>
-    <th>Inputs</th> 
+    <th>Inputs</th>
     <th>Expected Output</th>
     <th>Result</th>
   </tr>" > ../reports/testReport.html
 
-#echo $PWD
-javac -cp . ../project/openmrs-core/api/src/main/java/org/openmrs/util/NaturalStrings.java ../project/openmrs-core/api/src/main/java/org/openmrs/util/NaturalStringDriver.java ../project/openmrs-core/api/src/main/java/org/openmrs/util/NaturalStringDriver2.java
-#echo $PWD
-javac -cp . ../project/openmrs-core/api/src/main/java/org/openmrs/util/OpenmrsUtil.java ../project/openmrs-core/api/src/main/java/org/openmrs/util/OpenmrsUtilDriver.java ../project/openmrs-core/api/src/main/java/org/openmrs/util/OpenmrsUtilDriver2.java ../project/openmrs-core/api/src/main/java/org/openmrs/util/OpenmrsUtilDriver3.java
+
+#path to location where all classes and drivers are contained in code (used to compile )
+#the actual classes and drivers are specified in the testCases files, not in script
+path='../project/openmrs-core/api/src/main/java/org/openmrs/util/'
+
+#create array to hold drivers that're already compiled to prevent recompiling
+declare -a driverArray=()
 
 for file in ../testCases/*; do
 
@@ -47,15 +50,36 @@ for file in ../testCases/*; do
 	driver=$(sed -n '15p' "$file")
 	inputs=$(sed -n '16p' "$file")
 	expOutput=$(sed -n '17p' "$file")
+  #package isn't in html table, just used for running the java classes
+  package=$(sed -n '18p' "$file")
 
-	#Run the correct driver
+  alreadyCompiled='0'
+  #loop through driverArray, if the driver is in driverArray then its already compiled
+  for i in "${driverArray[@]}"; do
+    if [ "$i" == "$driver" ]
+    then
+      alreadyCompiled='1'
+    fi
+  done
 
+  #use alreadyCompiled to determine if driver/class is already compiled
+  if [ "$alreadyCompiled" != "1" ]
+  then
+    #variable containing driver and class path to be compiled (if not already compiled)
+    stringToCompile="$path$class $path${driver}.java"
+    #compile to current directory using the previous made stringToCompile variable
+    javac -cp . $stringToCompile
+    #add driver to driverArray to prevent recompiling
+    driverArray=("${driverArray[@]}" $driver)
+  fi
+
+  #Run the correct driver
 	cd ../project/openmrs-core/api/src/main/java
-	result=$(java -cp . $driver "$inputs")
+	result=$(java -cp . $package$driver "$inputs")
 	cd ../../../../..
 
 	#Dump test case info into terminal
-	
+
 
 	echo "---------------------"
 	echo "Test: $test "
@@ -67,7 +91,7 @@ for file in ../testCases/*; do
 	echo "Inputs: $inputs"
 	echo "Expected Output: $expOutput"
 	echo "Result: $result"
-	
+
 
 
 	echo "<tr>">> ../reports/testReport.html
@@ -80,7 +104,7 @@ for file in ../testCases/*; do
 	echo "<td>$expOutput</td>">> ../reports/testReport.html
 	echo "<td>$result</td>">> ../reports/testReport.html
 
-	
+
 
 	#Compare the output to expected and determine pass or fail
 	if [ $expOutput == true ] || [ $expOutput == false ]
@@ -109,4 +133,4 @@ echo "</table>
 </html>" >> ../reports/testReport.html
 
 #Open report
-open ../reports/testReport.html
+xdg-open ../reports/testReport.html

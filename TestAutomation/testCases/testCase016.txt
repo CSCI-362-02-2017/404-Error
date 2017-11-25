@@ -12,6 +12,7 @@
 This is testing that the correct boolean value will be printed from the containsDigit(String str) method in OpenmrsUtil.java
 containsDigit(String str)
 OpenmrsUtil.java
-org.openmrs.util.OpenmrsUtilDriver3
+OpenmrsUtilDriver3
 asdf3
 true
+org.openmrs.util.

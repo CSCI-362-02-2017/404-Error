@@ -12,6 +12,7 @@
 This is testing that the correct boolean value will be printed from the isStringInArray(String str, String[] arr) method in OpenmrsUtil.java
 isStringInArray(String str, String[] arr)
 OpenmrsUtil.java
-org.openmrs.util.OpenmrsUtilDriver
+OpenmrsUtilDriver
 computer, random, test, computer
 true
+org.openmrs.util.
