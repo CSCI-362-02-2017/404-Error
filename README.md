@@ -1,7 +1,7 @@
 # 404-Error
-Fall 2017 CSCI362
-Project: OpenMRS 
-Authors: Ricky Ramos, Matthew Schwarz, Matthew Kay
+# Fall 2017 CSCI362
+# Project: OpenMRS 
+# Authors: Ricky Ramos, Matthew Schwarz, Matthew Kay
 
 Quick Start Guide:
 1. Clone our project by opening up the terminal and typing: 
