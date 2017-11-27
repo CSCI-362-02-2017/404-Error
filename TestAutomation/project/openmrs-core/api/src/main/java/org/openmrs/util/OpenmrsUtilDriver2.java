@@ -1,6 +1,5 @@
 package org.openmrs.util;
 
-//Driver for containsOnlyDigits(String str)
 public class OpenmrsUtilDriver2 {
 	public static void main(String[] args) {
 		String[] temp = args[0].split(", ");
