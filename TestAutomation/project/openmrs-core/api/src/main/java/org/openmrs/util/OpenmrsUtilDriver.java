@@ -35,6 +35,5 @@ public class OpenmrsUtilDriver {
 		arr[1] = temp[2];
 		arr[2] = temp[3];
 		System.out.println(OpenmrsUtil.isStringInArray(str, arr));
-		//System.out.println("Error: Incorrect number of arguments!");
 	}
 }
