@@ -6,7 +6,7 @@
 # 5. Driver being used
 # 6. Test Inputs(s)
 # 7. Expected Result
-#
+# 8. Package
 
 024
 Testing that the compareNatural method will return a positive number if s lexicographically follows t
