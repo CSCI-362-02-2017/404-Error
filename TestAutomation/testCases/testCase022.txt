@@ -6,7 +6,7 @@
 # 5. Driver being used
 # 6. Test Inputs(s)
 # 7. Expected Result
-#
+# 8. Package
 
 022
 Testing that the compareNatural method will return a negative number if s lexicographically precedes t
