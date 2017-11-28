@@ -6,7 +6,7 @@
 # 5. Driver being used
 # 6. Test Inputs(s)
 # 7. Expected Result
-#
+# 8. Package
 
 014
 This is testing that the correct boolean value will be printed from the containsOnlyDigits(String str) method in OpenmrsUtil.java
