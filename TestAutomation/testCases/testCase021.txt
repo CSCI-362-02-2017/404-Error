@@ -6,7 +6,7 @@
 # 5. Driver being used
 # 6. Test Inputs(s)
 # 7. Expected Result
-#
+# 8. Package
 
 021
 This is testing that the compareNatural method will return a 0 if the two strings are equal
