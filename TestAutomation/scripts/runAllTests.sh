@@ -1,7 +1,6 @@
 #!/bin/bash
 
 #Change to directory of script.
-echo $PWD
 cd testCases
 
 #Create report
