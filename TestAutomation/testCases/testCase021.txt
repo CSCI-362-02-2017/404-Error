@@ -9,7 +9,7 @@
 # 8. Package
 
 021
-This is testing that the compareNatural method will return a 0 if the two strings are equal
+The method should return a 0 if the two strings are equal
 compareNaturalIgnoreCaseAscii(String s, String t)
 NaturalStrings.java
 NaturalStringDriver2
