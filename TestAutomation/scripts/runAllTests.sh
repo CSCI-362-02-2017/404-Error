@@ -1,7 +1,8 @@
 #!/bin/bash
 
 #Change to directory of script.
-cd ../testCases
+echo $PWD
+cd testCases
 
 #Create report
 
@@ -39,7 +40,7 @@ path='../project/openmrs-core/api/src/main/java/org/openmrs/util/'
 
 #create array to hold drivers that're already compiled to prevent recompiling
 declare -a driverArray=()
-
+echo $pwd
 for file in ../testCases/*; do
 
 	#Get variables from text files
