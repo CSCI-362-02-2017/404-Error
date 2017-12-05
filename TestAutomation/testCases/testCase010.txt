@@ -9,7 +9,7 @@
 # 8. Package
 
 010
-The method should return the correct boolean value
+The method should return false if the test string is not in the array
 isStringInArray(String str, String[] arr)
 OpenmrsUtil.java
 OpenmrsUtilDriver

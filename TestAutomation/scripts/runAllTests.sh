@@ -133,4 +133,4 @@ echo "</table>
 </html>" >> ../reports/testReport.html
 
 #Open report
-xdg-open ../reports/testReport.html
+open ../reports/testReport.html

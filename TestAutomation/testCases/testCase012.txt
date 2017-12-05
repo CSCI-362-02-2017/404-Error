@@ -9,7 +9,7 @@
 # 8. Package
 
 012
-The method should return the correct boolean value
+The method should return true if the string contains all digits
 containsOnlyDigits(String str)
 OpenmrsUtil.java
 OpenmrsUtilDriver2

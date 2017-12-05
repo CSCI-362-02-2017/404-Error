@@ -9,7 +9,7 @@
 # 8. Package
 
 018
-The method should return the correct boolean value
+The method should return true if the string has at least one digit
 containsDigit(String str)
 OpenmrsUtil.java
 OpenmrsUtilDriver3
