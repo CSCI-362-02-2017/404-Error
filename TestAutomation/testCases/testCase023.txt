@@ -9,7 +9,7 @@
 # 8. Package
 
 023
-Testing that the compareNatural method will return a positive number if s lexicographically follows t
+The method should return a positive number if s lexicographically follows t
 compareNaturalIgnoreCaseAscii(String s, String t)
 NaturalStrings.java
 NaturalStringDriver2
