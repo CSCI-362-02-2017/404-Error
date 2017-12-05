@@ -9,7 +9,7 @@
 # 8. Package
 
 022
-Testing that the compareNatural method will return a negative number if s lexicographically precedes t
+The method should return a negative number if s lexicographically precedes t
 compareNaturalIgnoreCaseAscii(String s, String t)
 NaturalStrings.java
 NaturalStringDriver2
