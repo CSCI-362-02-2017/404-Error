@@ -9,7 +9,7 @@
 # 8. Package
 
 012
-This is testing that the correct boolean value will be printed from the containsOnlyDigits(String str) method in OpenmrsUtil.java
+The method should return the correct boolean value
 containsOnlyDigits(String str)
 OpenmrsUtil.java
 OpenmrsUtilDriver2
