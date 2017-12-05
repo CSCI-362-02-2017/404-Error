@@ -9,5 +9,5 @@ git clone https://github.com/CSCI-362-02-2017/404-Error.git
 2. Ensure that you have at least Java JDK of minimum version 8.
 3. Navegate to the TestAutomation folder, enter this command into terminal:
 chmod +x /scripts/runAllTests.sh  (this makes the script runnable)
-4. Navigate to the TestAutomation/scripts folder and type:
-bash runAllTests.sh
+4. Navigate to the TestAutomation/ folder and type:
+./scripts/runAllTests.sh
