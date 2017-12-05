@@ -9,7 +9,7 @@
 # 8. Package
 
 010
-This is testing that the correct boolean value will be printed from the isStringInArray(String str, String[] arr) method in OpenmrsUtil.java
+The method should return the correct boolean value
 isStringInArray(String str, String[] arr)
 OpenmrsUtil.java
 OpenmrsUtilDriver
